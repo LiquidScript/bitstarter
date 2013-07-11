@@ -8,7 +8,7 @@ var app = express.createServer(express.logger());
 
 
 	app.get('/', function(request, response) {
-  	response.send(buf.toString(String));
+  	response.send(buf.toString('ascii'));
 	});
 
 
