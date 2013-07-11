@@ -1,14 +1,14 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-var buf =new Buffer(256);
+//var buf =new Buffer(256);
 
-buf = fs.readFile('index.html');
-console.log(buf);
+//buf = fs.readFile('index.html');
+//console.log(buf);
 
 
 	app.get('/', function(request, response) {
-  	response.send(buf.toString('utf-8'));
+  	response.send('Hello World!');
 	});
 
 
